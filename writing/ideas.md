@@ -2,7 +2,7 @@
 
 
 ## Date: 24 Oct 2018
-## Group Names:
+## Group Names: Robert Samuel, Mikey Spurr, Trent Faulkner, Christian Lussier
 
 
 
