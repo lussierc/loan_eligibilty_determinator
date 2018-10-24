@@ -1,10 +1,11 @@
+# Ideas and articles
+
+
 ## Date: 24 Oct 2018
 ## Group Names:
 
 
 
-
-# Ideas and articles
 
 For each of your five ideas, please respond to the following. Each person is to submit a markdown document containing the names of his or her group members.  
 
