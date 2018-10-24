@@ -10,7 +10,7 @@ For each of your five ideas, please respond to the following. Each person is to 
 
 
 
-# Idea 1
+### Idea 1
 1) Explain your idea for a class project.
 
 2) How is the idea connected to computer science?
@@ -22,7 +22,7 @@ For each of your five ideas, please respond to the following. Each person is to 
 5) How will this article support your idea?
 
 
-# Idea 2
+### Idea 2
 1) Explain your idea for a class project.
 
 2) How is the idea connected to computer science?
@@ -34,7 +34,7 @@ For each of your five ideas, please respond to the following. Each person is to 
 5) How will this article support your idea?
 
 
-# Idea 3
+### Idea 3
 1) Explain your idea for a class project.
 
 2) How is the idea connected to computer science?
@@ -46,7 +46,7 @@ For each of your five ideas, please respond to the following. Each person is to 
 5) How will this article support your idea?
 
 
-# Idea 4
+### Idea 4
 1) Explain your idea for a class project.
 
 2) How is the idea connected to computer science?
@@ -58,7 +58,7 @@ For each of your five ideas, please respond to the following. Each person is to 
 5) How will this article support your idea?
 
 
-# Idea 5
+### Idea 5
 1) Explain your idea for a class project.
 
 2) How is the idea connected to computer science?
