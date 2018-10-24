@@ -7,7 +7,9 @@
 
 
 
-For each of your five ideas, please respond to the following. Each person is to submit a markdown document containing the names of his or her group members.  
+For each of your five ideas, please respond to the following. Each person is to submit a markdown document containing the names of his or her group members.
+
+Please be sure that you justify why your idea is of interest to discrete structures.
 
 
 
