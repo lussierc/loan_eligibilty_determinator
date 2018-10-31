@@ -24,9 +24,9 @@ Overall, this project idea is connected to computer science because it exemplifi
 
 ### Idea 2
 #### 1) Explain your idea for a class project.
-Maze game using graph theory.
+Another idea that we have for a class project would be to make a maze game of sorts using graphs and graph theory. The user would be given a maze and would have to input which way they want to go in order to try to exit it. If they are able to exit the maze, they win the game.
 #### 2) How is the idea connected to computer science?
-
+This idea is connected to connected to computer science because it uses the idea of graphs and graph theory.
 #### 3) What is the article's reference to support this idea? Note: Articles are no older than five years
 
 #### 4) What is the central thesis to the article?
