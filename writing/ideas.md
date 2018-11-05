@@ -72,11 +72,11 @@ Link: http://ijsrcseit.com/paper/CSEIT1725170.pdf
 
 ### Idea 5
 #### 1) Explain your idea for a class project.
-
+Idea 5 is that we could use the Golden Ratio to better enhance Cryptography. Using the Golden Ratio for this purpose would probably be very beneficial for security purposes to have a more digital security and to enhance cryptographic operations.  
 #### 2) How is the idea connected to computer science?
-
+This idea is connected to computer science because it is based off using the Golden Ratio.
 #### 3) What is the article's reference to support this idea? Note: Articles are no older than five years
-
+https://www.mdpi.com/2297-8747/23/4/58
 #### 4) What is the central thesis to the article?
 
 #### 5) How will this article support your idea?
