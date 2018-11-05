@@ -25,26 +25,30 @@ Kry, Stephen F., et al. "Institutional patient-specific IMRT QA does not predict
 Link: https://europepmc.org/articles/pmc4276500
 
 #### 4) What is the central thesis to the article?
+"IMRT QA is not a reasonable replacement for a credentialing phantom. Moreover, the particularly poor agreement between IMRT QA and the IROC Houston phantoms highlights surprising inconsistency in the QA process."
 
 #### 5) How will this article support your idea?
-
+This article supports our idea because it shows an example of a real-world use of the idea of truth tables, which is what our idea would attempt to show as it would be combining Python programming and truth tables to create programs for real-world uses (by businesses). In the case of this article, it shows an example of a real-world use of truth tables in the medical field. In the work done for this article, truth tables "were constructed to compare pass/fail results of IMMRT QA and the IROC Houston Phantom."
 
 ### Idea 2
 #### 1) Explain your idea for a class project.
 Another idea that we have for a class project would be to make a maze game of sorts using graphs and graph theory. The user would be given a maze and would have to input which way they want to go in order to try to exit it. If they are able to exit the maze, they win the game.
 
 This idea is connected to the idea of discrete structures from graph theory. It would be a fun way to show the connection between graph theory in discrete structures, computer science, and games.
+
 #### 2) How is the idea connected to computer science?
-This idea is connected to connected to computer science because it uses the idea of graphs and graph theory.
+This idea is connected to connected to computer science because though Graph Theory is a discrete mathematics idea, it is heavily utilized in computer science. Additionally, to create this game we would have to code it in Python, which obviously is apart of the computer science sphere. We would have to use computer science concepts such as objects, classes, and more, to make this idea come to fruition.
+
 #### 3) What is the article's reference to support this idea? Note: Articles are no older than five years
 MLA Citation:
 Mondal, Basudeb, and Kajal De. "Overview Applications of Graph Theory in Real Field." International Journal of Scientific Research in Computer Science, Engineering and Information Technology 2.5 (2017): 751-759.
 
 Link: http://ijsrcseit.com/paper/CSEIT1725170.pdf
 #### 4) What is the central thesis to the article?
+"Various application of graph theory in the real field has been identified and represented along with what type of graphs are used in that application. The Authors tries to give a basic conceptual understanding of all such type of graphs."
 
 #### 5) How will this article support your idea?
-
+Our idea would be using graph theory to create a game. This article supports our idea because it helps to explain that graph theory has more real-world uses than just in discrete mathematics alone. The article shows that graph theory can be used in biochemistry, engineering, computer science, and more. This makes it seem more feasible that graph theory could be used to make our game.
 
 ### Idea 3
 #### 1) Explain your idea for a class project.
@@ -72,11 +76,11 @@ Link: http://ijsrcseit.com/paper/CSEIT1725170.pdf
 
 ### Idea 5
 #### 1) Explain your idea for a class project.
-Idea 5 is that we could use the Golden Ratio to better enhance Cryptography. Using the Golden Ratio for this purpose would probably be very beneficial for security purposes to have a more digital security and to enhance cryptographic operations.  
+Idea 5 is that we could use the Golden Ratio to better enhance Cryptography. Using the Golden Ratio for this purpose would probably be very beneficial for security purposes to have a more digital security and to enhance cryptographic operations.
 #### 2) How is the idea connected to computer science?
 This idea is connected to computer science because it is based off using the Golden Ratio.
 #### 3) What is the article's reference to support this idea? Note: Articles are no older than five years
-https://www.mdpi.com/2297-8747/23/4/58
+Link: https://www.mdpi.com/2297-8747/23/4/58
 #### 4) What is the central thesis to the article?
 
 #### 5) How will this article support your idea?
