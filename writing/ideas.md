@@ -52,15 +52,18 @@ Our idea would be using graph theory to create a game. This article supports our
 
 ### Idea 3
 #### 1) Explain your idea for a class project.
-
+Another idea we have for a project would be for a business tracking its workers with what hours they work. The way we could do this is have our program made up of lists that have stored the workers names into the program, then after that we could use a boolean truth table to track there work. For example if the worker is at work when they come in they would just type in there name and then type in true and after that it will count as them being logged into the work day and then when they leave then just type in false and it will sign them out.
 #### 2) How is the idea connected to computer science?
-
+This idea is connected to computer science because we would use either a list, dictionary, or tuple to store the person name and whether they are on the clock or not and then we could use a boolean truth table to return whether or not they are working right now or what there hours were for the given week.
 #### 3) What is the article's reference to support this idea? Note: Articles are no older than five years
+I got my idea from this page where they use a smart card to track whether or not students have been attending class. I thought of how at work there is usually a time card that is used or maybe an electronic device, and we could make it very simple to have a program running on a computer where everyone walks in and they just type true when they enter and false when they leave. the article supports this idea by saying it will help increase students going to class like in the workforce it would help to know whether or not a worker is working enough hours or maybe whether or not a worker deserves a raise with his time spent.
+
+“Project Idea | Attendance System Using Smart Card.” GeeksforGeeks, 30 Aug. 2017, www.geeksforgeeks.org/project-idea-attendance-system-using-smart-card/.
 
 #### 4) What is the central thesis to the article?
-
+Having a smart attendance card that you carry around and says whether your in class or not will not waste time on attendance and cause more kids to show up.
 #### 5) How will this article support your idea?
-
+Our idea is to create a sign in system for large companies with many workers where logs could get confusing and sometimes lost, this article supports it by saying it will help students, in our case workers, show up to work more often and maybe even for longer than normal.
 
 ### Idea 4
 #### 1) Explain your idea for a class project.
