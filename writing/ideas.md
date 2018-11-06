@@ -82,5 +82,6 @@ This idea is connected to computer science because it is based off using the Gol
 #### 3) What is the article's reference to support this idea? Note: Articles are no older than five years
 Link: https://www.mdpi.com/2297-8747/23/4/58
 #### 4) What is the central thesis to the article?
-
+The central thesis of this article is to develop a Golden Ratio method that is more efficient and faster method than the current Fibonacci method for the cryptosystem.
 #### 5) How will this article support your idea?
+This article will help support my idea because it explains and goes through experiments to see how the golden ratio method works in cryptography.
