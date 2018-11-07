@@ -67,14 +67,18 @@ Our idea is to create a sign in system for large companies with many workers whe
 
 ### Idea 4
 #### 1) Explain your idea for a class project.
-
+For idea number 4 we could use graph theory to demonstrate traffic simulator. Using this simulator we can compare how  traffic in currently flows in the real world compared to how it can be improved and maximized so that people are driving around with peak efficiency. This idea can be scaled with a few data points or  thousands, provided their is enough memory. The end result of this project would be to achieve peak data traffic flow while the the traffic is dispersed equally among the road network. This program should also be able to handle sudden changes to the road system, where if a point is removed efficiency only decreases by a certain magnitude.
 #### 2) How is the idea connected to computer science?
+This idea is connected to computer science because we would use graph theory to create the road network. This network can either be based off an existing road system, which may work very well or currently is very inefficient, or we can create our own.  For the data sets of the cars we would most likely assign random license plate numbers to represent data points and as they travel through the network at each point they would stop and be added to the list, however the list would be of a fixed size to represent traffic congestion and the limit of efficiency. This program would use lists and graph Theory, combined with efficent programming to solve traffic problems.
 
 #### 3) What is the article's reference to support this idea? Note: Articles are no older than five years
+Gauthier, Pauline, et al. “Road Network Resilience: How to Identify Critical Links Subject to Day-to-Day Disruptions.” Transportation Research Record, Aug. 2018, doi:10.1177/0361198118792115.
 
+Link: https://journals.sagepub.com/doi/abs/10.1177/0361198118792115#articleCitationDownloadContainer
 #### 4) What is the central thesis to the article?
-
+By stress testing the simulation of a system with different factors such as topography, network congestion, and demand we can identify key network data, which could potentially lead to a more efficient design in the future.
 #### 5) How will this article support your idea?
+This article is exactly what our idea is based off on. For this idea we want to create a road network that can remain efficient under a number of factors, that include network demand and heavy congestion. We also want the data to be able to be evenly distributed throughout the system if possible to maintain balance between the networks. This article is very closely related to  this goal, but instead uses the word resilience to refer to all the aforementioned demands of the network.
 
 
 ### Idea 5
