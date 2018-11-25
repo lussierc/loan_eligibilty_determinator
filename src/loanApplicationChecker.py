@@ -2,16 +2,11 @@
 # Group Members: Christian Lussier, Trent Faulkner, Robert Samuel, Mikey Spurr
 
 
-def myAND(in1_bool, in2_bool):
+def myAND(in1_bool, in2_bool, in3_bool):
 # function to determine the boolean AND calculation.
     return in1_bool and in2_bool
 #end of myAND()
 
-
-def myOR(in1_bool, in2_bool, in3_bool):
-# function to determine the boolean OR calculation.
-    return in1_bool or in2_bool
-#end of myOR()
 
 def main(): # lead function
 #define the list of true and false values
@@ -27,8 +22,8 @@ def main(): # lead function
     for a in A_list:
         for b in B_list:
             for c in C_list:
-                myOR_bool = myOR(a,b,c)
-                truth_dic1[str(a) + " AND " + str(b) + " AND " + str(c)] = myOR_bool # Adds information to dictionary/boolean
+                myAND_bool = myAND(a,b,c)
+                truth_dic1[str(a) + " AND " + str(b) + " AND " + str(c)] = myAND_bool # Adds information to dictionary/boolean
 
     # Prints information from "OR":
     print("Results:")
