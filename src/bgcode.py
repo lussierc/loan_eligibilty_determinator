@@ -7,10 +7,13 @@ __date__        = "3 October 2018"
 
 
 
-def myAND(in1_bool, in2_bool, in3_bool):
+def prelim_q_analyzer(in1_bool, in2_bool, in3_bool):
     return in1_bool and in2_bool and in3_bool
 
-
+def indepth_(in1_bool, in2_bool, in3_bool, ):
+# function to determine the boolean OR calculation.
+    return in1_bool or in2_bool
+#end of myOR()
 def main(): # lead function
     # defines the list of patients:
     Patient_list = ['Anne', 'Bernard', 'Christian', 'Trent', 'Robert', 'Pascal', 'Benjamin Buttons', 'Tester'] # The names of the patients for whom the data belongs to.

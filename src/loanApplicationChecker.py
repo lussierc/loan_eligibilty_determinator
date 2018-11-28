@@ -18,8 +18,11 @@ def start_up_message():
     print() # spacing line for better readability.
 
 
-def myAND(in1_bool, in2_bool, in3_bool):
+def prelim_q_analyzer(in1_bool, in2_bool, in3_bool):
     return in1_bool and in2_bool and in3_bool
+
+def indepth_(in1_bool, in2_bool, in3_bool, ):
+    return in1_bool or in2_bool
 
 
 
@@ -60,10 +63,10 @@ def main():
         for a in q1_list:
             for b in q2_list:
                 for c in q3_list:
-                    myAND_bool = myAND(a,b,c)
-                    truth_dic3[str(a) + " AND " + str(b) + " AND " + str(c)] = myAND_bool # Adds information to dictionary/boolean
+                    prelim_bool = prelim_q_analyzer(a,b,c)
+                    truth_dic3[str(a) + " AND " + str(b) + " AND " + str(c)] = prelim_bool # Adds information to dictionary/boolean
 
-        if myAND_bool == True:
+        if prelim_bool == True:
             print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the preliminary questions.")
             print() # spacing line for better readability.
         else:
@@ -71,16 +74,6 @@ def main():
             print("Move on to the broader set of questions.")
             print() # spacing line for better readability.
 
-        restart_program = input("Do you want to restart the program? YES or NO? --- ")
-        if restart_program == "YES":
-            print() # spacing line for better readability.
-            print() # spacing line for better readability.
-            main()
-            print() # spacing line for better readability.
-        else:
-            print() # spacing line for better readability.
-            print("Closing the program!")
-            print() # spacing line for better readability.
 
 
     else:
@@ -142,6 +135,18 @@ def main():
             indpth_q7_list = [True]
         else:
             indpth_q7_list = [False]
+
+
+    restart_program = input("Do you want to restart the program? YES or NO? --- ")
+    if restart_program == "YES":
+        print() # spacing line for better readability.
+        print() # spacing line for better readability.
+        main()
+        print() # spacing line for better readability.
+    else:
+        print() # spacing line for better readability.
+        print("Closing the program!")
+        print() # spacing line for better readability.
 
     # print("Analyzing Question Response ...")
     # if q1_answer == "YES":
