@@ -63,10 +63,25 @@ def main():
                     truth_dic3[str(a) + " AND " + str(b) + " AND " + str(c)] = myAND_bool # Adds information to dictionary/boolean
 
         if myAND_bool == True:
-            print(applicant_name + "has been determined to be ELIGIBLE for the loan based off the preliminary questions.")
+            print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the preliminary questions.")
+            print() # spacing line for better readability.
         else:
             print(applicant_name + " has been determined to be INELIGIBLE for the loan based off the preliminary questions.")
             print("Move on to the broader set of questions.")
+            print() # spacing line for better readability.
+
+        restart_program = input("Do you want to restart the program? YES or NO? --- ")
+        if restart_program == "YES":
+            print() # spacing line for better readability.
+            print() # spacing line for better readability.
+            main()
+            print() # spacing line for better readability.
+
+        else:
+            print() # spacing line for better readability.
+            print("Closing the program!")
+            print() # spacing line for better readability.
+
 
     else:
         print("*** 7 All-Encompassing Questions ***")
