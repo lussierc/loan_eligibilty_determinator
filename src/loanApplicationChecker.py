@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """This program will check a applicant's eligbility for a loan."""
 
-__author__      = "Christian Lussier, Trent Faulkner, Robert Samuel, Mike Spurr"
+__authors__      = "Christian Lussier, Trent Faulkner, Robert Samuel, Mike Spurr"
 __date__        = "28 Nov 2018"
 
 
@@ -10,12 +10,10 @@ def start_up_message():
     print() # spacing line for better readability.
     print("Welcome to the Loan Eligibility Checker!")
     print("--------------------------------------------------------------------------------")
-    print("** About The Program: This program is for checking a applicant's eligibility for a loan from a bank.")
-    print("The banker should ask the user questions and record their Yes or No answers in the program.")
-    print("There are two sets of questions: one quick set and one longer set for more interesting cases.")
-    print("The program will then give a determination on whether the user should recieve a loan.")
+    print("| * About The Program: This program is for checking a applicant's eligibility  |\n| for a loan from a bank.| The banker should ask the user questions and record |\n| their Yes or No answers in the program.There are two sets of questions: one  |\n| quick set and one longer set for more interesting cases. The program will    |\n| give a determination on whether the user should recieve a loan.              |")
     print("--------------------------------------------------------------------------------")
     print() # spacing line for better readability.
+# End start_up_message function
 
 def restart_program():
     user_rsrt_decision = input("Do you want to restart the program? YES or NO? --- ")
@@ -28,14 +26,14 @@ def restart_program():
         print() # spacing line for better readability.
         print("Closing the program!")
         print() # spacing line for better readability.
-
+# End restart_program function
 
 def prelim_q_analyzer(in1_bool, in2_bool, in3_bool):
     return in1_bool and in2_bool and in3_bool
 
-def indepth_q_analyzer(in1_bool, in2_bool, in3_bool, in4_bool, in5_bool, in6_bool, in7_bool):
-    return in1_bool or in2_bool
 
+def indepth_q_analyzer(in1_bool, in2_bool, in3_bool, in4_bool, in5_bool, in6_bool, in7_bool):
+    return in1_bool and in2_bool or in3_bool and in4_bool or in5_bool and in6_bool and in7_bool
 
 
 def main():
@@ -123,7 +121,7 @@ def main():
             indpth_q4_list = [False]
 
         ## INDEPTH Question 5
-        indpth_q5_answer = input("5) Will the applicant be using the loan for a practical/realistic purpose? YES or NO? -- ")
+        indpth_q5_answer = input("5) Will the applicant be using the loan for a practical/realistic purpose that won't interfere with their ability to repay the loan? YES or NO? -- ")
         indpth_q5_list = []
         if indpth_q5_answer == "YES":
             indpth_q5_list = [True]
