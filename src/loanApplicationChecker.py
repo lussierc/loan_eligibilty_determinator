@@ -76,7 +76,6 @@ def main():
             print() # spacing line for better readability.
             main()
             print() # spacing line for better readability.
-
         else:
             print() # spacing line for better readability.
             print("Closing the program!")
@@ -84,7 +83,61 @@ def main():
 
 
     else:
-        print("*** 7 All-Encompassing Questions ***")
+        print("*** 7 In-Depth Questions ***")
+        indpth_q1_answer = input("1) -- ")
+        indpth_q1_list = []
+        if indpth_q1_answer == "YES":
+            indpth_q1_list = [True]
+        else:
+            indpth_q1_list = [False]
+
+        ## Question 2
+        indpth_q2_answer = input("2) -- ")
+        indpth_q2_list = []
+        if indpth_q2_answer == "YES":
+            indpth_q2_list = [True]
+        else:
+            indpth_q2_list = [False]
+
+        ## INDEPTH Question 3
+        indpth_q3_answer = input("3) -- ")
+        indpth_q3_list = []
+        if indpth_q3_answer == "YES":
+            indpth_q3_list = [True]
+        else:
+            indpth_q3_list = [False]
+
+        ## INDEPTH Question 4
+        indpth_q4_answer = input("4) -- ")
+        indpth_q4_list = []
+        if indpth_q4_answer == "YES":
+            indpth_q4_list = [True]
+        else:
+            indpth_q4_list = [False]
+
+        ## INDEPTH Question 5
+        indpth_q5_answer = input("5) -- ")
+        indpth_q5_list = []
+        if indpth_q5_answer == "YES":
+            indpth_q5_list = [True]
+        else:
+            indpth_q5_list = [False]
+
+        ## INDEPTH Question 6
+        indpth_q6_answer = input("6) -- ")
+        indpth_q6_list = []
+        if indpth_q6_answer == "YES":
+            indpth_q6_list = [True]
+        else:
+            indpth_q6_list = [False]
+
+        ## INDEPTH Question 7
+        indpth_q7_answer = input("7) -- ")
+        indpth_q7_list = []
+        if indpth_q7_answer == "YES":
+            indpth_q7_list = [True]
+        else:
+            indpth_q7_list = [False]
 
     # print("Analyzing Question Response ...")
     # if q1_answer == "YES":
