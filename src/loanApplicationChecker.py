@@ -17,11 +17,23 @@ def start_up_message():
     print("--------------------------------------------------------------------------------")
     print() # spacing line for better readability.
 
+def restart_program():
+    user_rsrt_decision = input("Do you want to restart the program? YES or NO? --- ")
+    if user_rsrt_decision == "YES":
+        print() # spacing line for better readability.
+        print() # spacing line for better readability.
+        main()
+        print() # spacing line for better readability.
+    else:
+        print() # spacing line for better readability.
+        print("Closing the program!")
+        print() # spacing line for better readability.
+
 
 def prelim_q_analyzer(in1_bool, in2_bool, in3_bool):
     return in1_bool and in2_bool and in3_bool
 
-def indepth_(in1_bool, in2_bool, in3_bool, ):
+def indepth_q_analyzer(in1_bool, in2_bool, in3_bool, in4_bool, in5_bool, in6_bool, in7_bool):
     return in1_bool or in2_bool
 
 
@@ -73,8 +85,6 @@ def main():
             print(applicant_name + " has been determined to be INELIGIBLE for the loan based off the preliminary questions.")
             print("Move on to the broader set of questions.")
             print() # spacing line for better readability.
-
-
 
     else:
         print("*** 7 In-Depth Questions ***")
@@ -137,42 +147,7 @@ def main():
             indpth_q7_list = [False]
 
 
-    restart_program = input("Do you want to restart the program? YES or NO? --- ")
-    if restart_program == "YES":
-        print() # spacing line for better readability.
-        print() # spacing line for better readability.
-        main()
-        print() # spacing line for better readability.
-    else:
-        print() # spacing line for better readability.
-        print("Closing the program!")
-        print() # spacing line for better readability.
-
-    # print("Analyzing Question Response ...")
-    # if q1_answer == "YES":
-    #     q1_boolean = True
-    # else:
-    #     q1_boolean = False
-    # if q2_answer == "YES":
-    #     q1_boolean = True
-    # else:
-    #     q2_boolean = False
-    # if q3_answer == "YES":
-    #     q3_boolean = True
-    # else:
-    #     q3_boolean = False
-    #
-    # truth_dic1 = {} # dictionary where the truth data will be stored.
-    #
-    # myAND_bool = myAND(q1_boolean,q2_boolean,q3_boolean)
-    # truth_dic1[str(q1_boolean) + " AND " + str(q2_boolean) + " AND " + str(q3_boolean)] = myAND_bool # Adds information to dictionary/boolean
-
-
-    # print("... Printing Determination: ")
-    #
-    # print("__OR Column__")
-    # for i in truth_dic1:
-    #     print("  ",i, ":", truth_dic1[i])
+    restart_program()
 
 
 start_up_message()
