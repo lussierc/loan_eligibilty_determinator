@@ -15,7 +15,7 @@ def start_up_message():
     print() # spacing line for better readability.
 # End start_up_message function
 
-def restart_program():
+def restart_program_menu():
     user_rsrt_decision = input("Do you want to restart the program? YES or NO? --- ")
     if user_rsrt_decision == "YES":
         print() # spacing line for better readability.
@@ -76,6 +76,7 @@ def main():
                     prelim_bool = prelim_q_analyzer(a,b,c)
                     truth_dic3[str(a) + " AND " + str(b) + " AND " + str(c)] = prelim_bool # Adds information to dictionary/boolean
 
+        print(prelim_bool)
         if prelim_bool == True:
             print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the preliminary questions.")
             print() # spacing line for better readability.
@@ -144,8 +145,27 @@ def main():
         else:
             indpth_q7_list = [False]
 
+        for a in indpth_q1_list:
+            for b in indpth_q2_list:
+                for c in indpth_q3_list:
+                    for d in indpth_q4_list:
+                        for e in indpth_q5_list:
+                            for f in indpth_q6_list:
+                                for g in indpth_q7_list:
+                                    indepth_bool = indepth_q_analyzer(a,b,c,d,e,f,g)
+                                    #truth_dic3[str(a) + " AND " + str(b) + " AND " + str(c)] = indepth_bool # Adds information to dictionary/boolean
 
-    restart_program()
+        print(indepth_bool)
+        if indepth_bool == True:
+            print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the preliminary questions.")
+            print() # spacing line for better readability.
+        else:
+            print(applicant_name + " has been determined to be INELIGIBLE for the loan based off the preliminary questions.")
+            print("Move on to the broader set of questions.")
+            print() # spacing line for better readability.
+
+
+    restart_program_menu()
 
 
 start_up_message()
