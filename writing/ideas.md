@@ -87,6 +87,10 @@ Idea 5 is that we could use the Golden Ratio to better enhance Cryptography. Usi
 #### 2) How is the idea connected to computer science?
 This idea is connected to computer science because it is based off using the Golden Ratio.
 #### 3) What is the article's reference to support this idea? Note: Articles are no older than five years
+MLA:
+  Overmars, Anthony, and Sitalakshmi Venkatraman. “An Efficient Golden Ratio Method for Secure Cryptographic Applications.” Mathematical and Computational Applications, vol. 23, no. 4, Oct. 2018, p. 58., doi:10.3390/mca23040058.
+
+  
 Link: https://www.mdpi.com/2297-8747/23/4/58
 #### 4) What is the central thesis to the article?
 The central thesis of this article is to develop a Golden Ratio method that is more efficient and faster method than the current Fibonacci method for the cryptosystem.
