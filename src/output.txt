@@ -5,3 +5,4 @@ Billy was determined to be: INELIGIBLE
 christian was determined to be: ELIGIBLE
 Johnny was determined to be: INELIGIBLE
 bigman was determined to be: INELIGIBLE
+JOE was determined to be: INELIGIBLE

@@ -15,6 +15,7 @@ def start_up_message():
     print() # spacing line for better readability.
 # End start_up_message function
 
+
 def restart_program_menu():
     user_rsrt_decision = input("Do you want to restart the program? YES or NO? --- ")
     if user_rsrt_decision == "YES" or user_rsrt_decision == "yes" or user_rsrt_decision == "Yes" or user_rsrt_decision == "y":
@@ -27,6 +28,18 @@ def restart_program_menu():
         print("Closing the program!")
         print() # spacing line for better readability.
 # End restart_program function
+
+
+def save_file(applicant_name, eligbility_status_str):
+    save_file_question = input("Do you want to save the applicants's loan eligibility status to a text file? YES or NO -- ")
+    if save_file_question == "YES" or save_file_question == "yes" or save_file_question == "Yes":
+        chosen_file_name = input("Please enter a new or already created '.txt' file name to save user information to -- ")
+        save_file = open(chosen_file_name,'a+')
+        save_file.write(applicant_name + " was determined to be: " +  eligbility_status_str + "\n")
+        save_file.close()
+    else:
+        print("Data will not be saved.")
+
 
 def prelim_q_analyzer(in1_bool, in2_bool, in3_bool):
     return in1_bool and in2_bool and in3_bool
@@ -169,15 +182,8 @@ def main():
             print() # spacing line for better readability.
 
 
-    save_file_question = input("Do you want to save the applicants's loan eligibility status to a text file? YES or NO -- ")
-    if save_file_question == "YES" or save_file_question == "yes" or save_file_question == "Yes":
-        chosen_file_name = input("Please enter a new or already created '.txt' file name to save user information to -- ")
-        save_file = open(chosen_file_name,'a+')
-        save_file.write(applicant_name + " was determined to be: " +  eligbility_status_str + "\n")
-        save_file.close()
-    else:
-        print("Data will not be saved.")
 
+    save_file(applicant_name, eligbility_status_str)
     restart_program_menu()
 
     # End main
