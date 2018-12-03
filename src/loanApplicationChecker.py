@@ -79,9 +79,11 @@ def main():
         print(prelim_bool)
         if prelim_bool == True:
             print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the preliminary questions.")
+            eligbility_status_str = "ELIGIBLE"
             print() # spacing line for better readability.
         else:
             print(applicant_name + " has been determined to be INELIGIBLE for the loan based off the preliminary questions.")
+            eligbility_status_str = "INELIGIBLE"
             print("Move on to the broader set of questions.")
             print() # spacing line for better readability.
 
@@ -155,17 +157,29 @@ def main():
                                     indepth_bool = indepth_q_analyzer(a,b,c,d,e,f,g)
                                     #truth_dic3[str(a) + " AND " + str(b) + " AND " + str(c)] = indepth_bool # Adds information to dictionary/boolean
 
+
         if indepth_bool == True:
             print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the preliminary questions.")
             print() # spacing line for better readability.
+            eligbility_status_str = "ELIGIBLE"
         else:
             print(applicant_name + " has been determined to be INELIGIBLE for the loan based off the preliminary questions.")
             print("Move on to the broader set of questions.")
+            eligbility_status_str = "INELIGIBLE"
             print() # spacing line for better readability.
 
 
+    save_file_question = input("Do you want to save the applicants's loan eligibility status to a text file? YES or NO -- ")
+    if save_file_question == "YES" or save_file_question == "yes" or save_file_question == "Yes":
+        save_file=open("output.txt",'a+')
+        save_file.write(applicant_name + " was determined to be: " +  eligbility_status_str + "\n")
+        save_file.close()
+    else:
+        print("Data will not be saved.")
+
     restart_program_menu()
 
+    # End main
 
 start_up_message()
 main()
