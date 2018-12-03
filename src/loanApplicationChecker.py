@@ -41,12 +41,12 @@ def main():
     print() # spacing line for better readability.
     which_qs = input("Do you want to begin with 3 preliminary questions? Type YES if you do, otherwise, hit enter and the program will move on to a broader set of questions! -- ")
     print("Please record applicant responses to the asked questions!")
-    if which_qs == "YES":
+    if which_qs == "YES" or which_qs == "yes" or which_qs == "Yes":
         print("** 3 Preliminary Questions **")
         ## Question 1
         q1_answer = input("1) Does the applicant present themselves well? YES or NO? -- ")
         q1_list = []
-        if q1_answer == "YES" || q1_answer == "yes" || q1_answer == "Yes":
+        if q1_answer == "YES" or q1_answer == "yes" or q1_answer == "Yes":
             q1_list = [True]
         else:
             q1_list = [False]
@@ -54,7 +54,7 @@ def main():
         ## Question 2
         q2_answer = input("2) Does the applicant have at least a credit score of at least 700 ('Good')? YES or NO? -- ")
         q2_list = []
-        if q2_answer == "YES" || q2_answer == "yes" || q2_answer == "Yes":
+        if q2_answer == "YES" or q2_answer == "yes" or q2_answer == "Yes":
             q2_list = [True]
         else:
             q2_list = [False]
@@ -63,7 +63,7 @@ def main():
         # https://www.entrepreneur.com/article/227191
         q3_answer = input("3) Does the applicant have adequate cash flow to repay the loan? YES or NO? -- ")
         q3_list = []
-        if q3_answer == "YES" || q3_answer == "yes" || q3_answer == "Yes":
+        if q3_answer == "YES" or q3_answer == "yes" or q3_answer == "Yes":
             q3_list = [True]
         else:
             q3_list = [False]
@@ -89,7 +89,7 @@ def main():
         print("*** 7 In-Depth Questions ***")
         indpth_q1_answer = input("1) Is the applicant in good standing with the bank? YES or NO? -- ")
         indpth_q1_list = []
-        if indpth_q1_answer == "YES" || indpth_q1_answer == "yes" || indpth_q1_answer == "Yes":
+        if indpth_q1_answer == "YES" or indpth_q1_answer == "yes" or indpth_q1_answer == "Yes":
             indpth_q1_list = [True]
         else:
             indpth_q1_list = [False]
@@ -98,7 +98,7 @@ def main():
         #https://www.experian.com/blogs/ask-experian/credit-education/score-basics/what-is-a-good-credit-score/
         indpth_q2_answer = input("2) Is the applicant's credit score above a 580 ('Fair')? YES or NO? -- ")
         indpth_q2_list = []
-        if indpth_q2_answer == "YES" || indpth_q2_answer == "yes" || indpth_q2_answer == "Yes":
+        if indpth_q2_answer == "YES" or indpth_q2_answer == "yes" or indpth_q2_answer == "Yes":
             indpth_q2_list = [True]
         else:
             indpth_q2_list = [False]
@@ -107,7 +107,7 @@ def main():
         # https://www.entrepreneur.com/article/227191
         indpth_q3_answer = input("3) Does the applicant have enough (or close to enough) collateral for their requested loan amount; or they have a way around having collateral? YES or NO? -- ")
         indpth_q3_list = []
-        if indpth_q2_answer == "YES" || indpth_q2_answer == "yes" || indpth_q2_answer == "Yes":
+        if indpth_q2_answer == "YES" or indpth_q2_answer == "yes" or indpth_q2_answer == "Yes":
             indpth_q3_list = [True]
         else:
             indpth_q3_list = [False]
@@ -116,7 +116,7 @@ def main():
         # https://www.finder.com/business-loan-interview
         indpth_q4_answer = input("4) Is the term for loan repayment requested by the applicant realistic? YES or NO? -- ")
         indpth_q4_list = []
-        if indpth_q4_answer == "YES" || indpth_q4_answer == "yes" || indpth_q4_answer == "Yes":
+        if indpth_q4_answer == "YES" or indpth_q4_answer == "yes" or indpth_q4_answer == "Yes":
             indpth_q4_list = [True]
         else:
             indpth_q4_list = [False]
@@ -124,7 +124,7 @@ def main():
         ## INDEPTH Question 5
         indpth_q5_answer = input("5) Will the applicant be using the loan for a practical/realistic purpose that won't interfere with their ability to repay the loan? YES or NO? -- ")
         indpth_q5_list = []
-        if indpth_q5_answer == "YES" || indpth_q5_answer == "yes" || indpth_q5_answer == "Yes":
+        if indpth_q5_answer == "YES" or indpth_q5_answer == "yes" or indpth_q5_answer == "Yes":
             indpth_q5_list = [True]
         else:
             indpth_q5_list = [False]
@@ -132,7 +132,7 @@ def main():
         ## INDEPTH Question 6
         indpth_q6_answer = input("6) Does the applicant currently have any unpaid debts/outstanding payments? YES or NO? -- ")
         indpth_q6_list = []
-        if indpth_q6_answer == "YES" || indpth_q6_answer == "yes" || indpth_q6_answer == "Yes":
+        if indpth_q6_answer == "YES" or indpth_q6_answer == "yes" or indpth_q6_answer == "Yes":
             indpth_q6_list = [True]
         else:
             indpth_q6_list = [False]
@@ -140,7 +140,7 @@ def main():
         ## INDEPTH Question 7
         indpth_q7_answer = input("7) Is the applicant currently employed? YES or NO? -- ")
         indpth_q7_list = []
-        if indpth_q7_answer == "YES" || indpth_q7_answer == "yes" || indpth_q7_answer == "Yes":
+        if indpth_q7_answer == "YES" or indpth_q7_answer == "yes" or indpth_q7_answer == "Yes":
             indpth_q7_list = [True]
         else:
             indpth_q7_list = [False]
