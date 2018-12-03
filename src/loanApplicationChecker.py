@@ -155,7 +155,6 @@ def main():
                                     indepth_bool = indepth_q_analyzer(a,b,c,d,e,f,g)
                                     #truth_dic3[str(a) + " AND " + str(b) + " AND " + str(c)] = indepth_bool # Adds information to dictionary/boolean
 
-        print(indepth_bool)
         if indepth_bool == True:
             print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the preliminary questions.")
             print() # spacing line for better readability.
