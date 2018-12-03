@@ -17,7 +17,7 @@ def start_up_message():
 
 def restart_program_menu():
     user_rsrt_decision = input("Do you want to restart the program? YES or NO? --- ")
-    if user_rsrt_decision == "YES" or user_rsrt_decision == "yes" or user_rsrt_decision == "Yes":
+    if user_rsrt_decision == "YES":
         print() # spacing line for better readability.
         print() # spacing line for better readability.
         main()
@@ -171,7 +171,8 @@ def main():
 
     save_file_question = input("Do you want to save the applicants's loan eligibility status to a text file? YES or NO -- ")
     if save_file_question == "YES" or save_file_question == "yes" or save_file_question == "Yes":
-        save_file=open("output.txt",'a+')
+        chosen_file_name = input("Please enter a new or already created '.txt' file name to save user information to -- ")
+        save_file = open(chosen_file_name,'a+')
         save_file.write(applicant_name + " was determined to be: " +  eligbility_status_str + "\n")
         save_file.close()
     else:
