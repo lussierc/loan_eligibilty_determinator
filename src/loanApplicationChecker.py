@@ -17,7 +17,7 @@ def start_up_message():
 
 def restart_program_menu():
     user_rsrt_decision = input("Do you want to restart the program? YES or NO? --- ")
-    if user_rsrt_decision == "YES":
+    if user_rsrt_decision == "YES" or user_rsrt_decision == "yes" or user_rsrt_decision == "Yes" or user_rsrt_decision == "y":
         print() # spacing line for better readability.
         print() # spacing line for better readability.
         main()
