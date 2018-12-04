@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 """This program will check a applicant's eligbility for a loan."""
 
 __authors__      = "Christian Lussier, Trent Faulkner, Robert Samuel, Mike Spurr"
@@ -17,6 +18,8 @@ def start_up_message():
 
 
 def restart_program_menu():
+    """Function contains the code that will allow the user to choose if they
+    want to restart the program."""
     user_rsrt_decision = input("Do you want to restart the program? YES or NO? --- ")
     if user_rsrt_decision == "YES" or user_rsrt_decision == "yes" or user_rsrt_decision == "Yes" or user_rsrt_decision == "y":
         print() # spacing line for better readability.
@@ -31,6 +34,8 @@ def restart_program_menu():
 
 
 def save_file(applicant_name, eligbility_status_str):
+    """Function that allows the user to choose if they want to change their
+    current applicant's name & loan eligibility information to a text file."""
     save_file_question = input("Do you want to save the applicants's loan eligibility status to a text file? YES or NO -- ")
     if save_file_question == "YES" or save_file_question == "yes" or save_file_question == "Yes":
         chosen_file_name = input("Please enter a new or already created '.txt' file name to save user information to -- ")
@@ -42,23 +47,27 @@ def save_file(applicant_name, eligbility_status_str):
 
 
 def prelim_q_analyzer(in1_bool, in2_bool, in3_bool):
+    """The analyzer code/equation for the preliminary question set."""
     return in1_bool and in2_bool and in3_bool
 
 
 def indepth_q_analyzer(in1_bool, in2_bool, in3_bool, in4_bool, in5_bool, in6_bool, in7_bool):
+    """The analyzer code/equation for the in-depth question set."""
     return in1_bool and in2_bool or in3_bool and in4_bool or in5_bool and in6_bool and in7_bool
 
 
 def main():
+    """The main 'driver' function of the program."""
     applicant_name = input("What is the applicant's name? -- ")
     print() # spacing line for better readability.
     which_qs = input("Do you want to begin with 3 preliminary questions? Type YES if you do, otherwise, hit enter and the program will move on to a broader set of questions! -- ")
     print("Please record applicant responses to the asked questions!")
-    if which_qs == "YES" or which_qs == "yes" or which_qs == "Yes":
+
+    if which_qs == "YES" or which_qs == "yes" or which_qs == "Yes": # if statement that checks to see if user wants to do the 3 preliminary questions
         print("** 3 Preliminary Questions **")
         ## Question 1
         q1_answer = input("1) Does the applicant present themselves well? YES or NO? -- ")
-        q1_list = []
+        q1_list = [] # creates list where question 1 answer boolean will be stored.
         if q1_answer == "YES" or q1_answer == "yes" or q1_answer == "Yes":
             q1_list = [True]
         else:
@@ -66,30 +75,29 @@ def main():
 
         ## Question 2
         q2_answer = input("2) Does the applicant have at least a credit score of at least 700 ('Good')? YES or NO? -- ")
-        q2_list = []
+        q2_list = [] # creates list where question 2 answer boolean will be stored.
         if q2_answer == "YES" or q2_answer == "yes" or q2_answer == "Yes":
             q2_list = [True]
         else:
             q2_list = [False]
 
         ## Question 3
-        # https://www.entrepreneur.com/article/227191
+        # Inspired by https://www.entrepreneur.com/article/227191
         q3_answer = input("3) Does the applicant have adequate cash flow to repay the loan? YES or NO? -- ")
-        q3_list = []
+        q3_list = [] # creates list where question 3 answer boolean will be stored.
         if q3_answer == "YES" or q3_answer == "yes" or q3_answer == "Yes":
             q3_list = [True]
         else:
             q3_list = [False]
 
-        truth_dic3 = {} # dictionary where the truth data will be stored.
-
+        # Go through user responses and determine eligbility:
         for a in q1_list:
             for b in q2_list:
                 for c in q3_list:
                     prelim_bool = prelim_q_analyzer(a,b,c)
-                    truth_dic3[str(a) + " AND " + str(b) + " AND " + str(c)] = prelim_bool # Adds information to dictionary/boolean
 
         print(prelim_bool)
+
         if prelim_bool == True:
             print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the preliminary questions.")
             eligbility_status_str = "ELIGIBLE"
@@ -160,6 +168,7 @@ def main():
         else:
             indpth_q7_list = [False]
 
+        # Go through user responses and determine eligbility:
         for a in indpth_q1_list:
             for b in indpth_q2_list:
                 for c in indpth_q3_list:
@@ -168,8 +177,6 @@ def main():
                             for f in indpth_q6_list:
                                 for g in indpth_q7_list:
                                     indepth_bool = indepth_q_analyzer(a,b,c,d,e,f,g)
-                                    #truth_dic3[str(a) + " AND " + str(b) + " AND " + str(c)] = indepth_bool # Adds information to dictionary/boolean
-
 
         if indepth_bool == True:
             print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the preliminary questions.")
@@ -181,12 +188,10 @@ def main():
             eligbility_status_str = "INELIGIBLE"
             print() # spacing line for better readability.
 
-
-
     save_file(applicant_name, eligbility_status_str)
     restart_program_menu()
+# End main
 
-    # End main
-
+# Call needed functions:
 start_up_message()
 main()
