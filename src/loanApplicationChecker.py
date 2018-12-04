@@ -96,18 +96,23 @@ def main():
                 for c in q3_list:
                     prelim_bool = prelim_q_analyzer(a,b,c)
 
-        print(prelim_bool)
+        print() # prints a blank line for spacing.
+        print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
 
         if prelim_bool == True:
             print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the preliminary questions.")
             eligbility_status_str = "ELIGIBLE"
-            print() # spacing line for better readability.
+            print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
+            print() # prints a blank line for spacing.
         else:
             print(applicant_name + " has been determined to be INELIGIBLE for the loan based off the preliminary questions.")
             eligbility_status_str = "INELIGIBLE"
+            print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
+            print() # prints a blank line for spacing.
             print("Move on to the broader set of questions.")
-            print() # spacing line for better readability.
 
+
+    # End prelimary questions
     else:
         print("*** 7 In-Depth Questions ***")
         indpth_q1_answer = input("1) Is the applicant in good standing with the bank? YES or NO? -- ")
@@ -177,16 +182,19 @@ def main():
                             for f in indpth_q6_list:
                                 for g in indpth_q7_list:
                                     indepth_bool = indepth_q_analyzer(a,b,c,d,e,f,g)
+        print() # prints a blank line for spacing.
+        print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
 
         if indepth_bool == True:
             print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the preliminary questions.")
-            print() # spacing line for better readability.
             eligbility_status_str = "ELIGIBLE"
+            print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
+            print() # prints a blank line for spacing.
         else:
             print(applicant_name + " has been determined to be INELIGIBLE for the loan based off the preliminary questions.")
-            print("Move on to the broader set of questions.")
             eligbility_status_str = "INELIGIBLE"
-            print() # spacing line for better readability.
+            print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
+            print() # prints a blank line for spacing.
 
     save_file(applicant_name, eligbility_status_str)
     restart_program_menu()
