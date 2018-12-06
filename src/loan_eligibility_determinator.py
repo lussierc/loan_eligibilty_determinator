@@ -11,7 +11,7 @@ def start_up_message():
     print() # spacing line for better readability.
     print("Welcome to the Loan Eligibility Checker!")
     print("--------------------------------------------------------------------------------")
-    print("| * About The Program: This program is for checking a applicant's eligibility  |\n| for a loan from a bank.| The banker should ask the user questions and record |\n| their Yes or No answers in the program.There are two sets of questions: one  |\n| quick set and one longer set for more interesting cases. The program will    |\n| give a determination on whether the user should recieve a loan.              |")
+    print("| * About The Program: This program is for checking a applicant's eligibility  |\n| for a loan from a bank.| The banker should ask the user questions and record |\n| their Yes or No answers in the program. There are two sets of questions: one  |\n| quick set and one longer set for more interesting cases. The program will    |\n| give a determination on whether the user should recieve a loan.              |")
     print("--------------------------------------------------------------------------------")
     print() # spacing line for better readability.
 # End start_up_message function
