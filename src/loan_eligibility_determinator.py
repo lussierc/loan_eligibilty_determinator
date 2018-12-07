@@ -47,7 +47,7 @@ def save_file(applicant_name, eligbility_status_str, question_set_status):
 
 
 def prelim_q_analyzer(in1_bool, in2_bool, in3_bool):
-    """The analyzer code/equation for the preliminary question set."""
+    """The analyzer code/equation for the fast-track/preliminary question set."""
     return in1_bool and in2_bool and in3_bool
 
 
@@ -60,11 +60,11 @@ def main():
     """The main 'driver' function of the program."""
     applicant_name = input("What is the applicant's name? -- ")
     print() # spacing line for better readability.
-    which_qs = input("Do you want to begin with 3 preliminary questions? Type YES if you do, otherwise, hit enter and the program will move on to a broader set of questions! -- ")
+    which_qs = input("Do you want to begin with 3 fast-track questions? Type YES if you do, otherwise, hit enter and the program will move on to a broader set of questions! -- ")
     print("Please record applicant responses to the asked questions!")
 
-    if which_qs == "YES" or which_qs == "yes" or which_qs == "Yes": # if statement that checks to see if user wants to do the 3 preliminary questions
-        print("** 3 Preliminary Questions **")
+    if which_qs == "YES" or which_qs == "yes" or which_qs == "Yes": # if statement that checks to see if user wants to do the 3 fast-track/preliminary questions
+        print("** 3 Fast-Track Questions **")
         question_set_status = "Fast-Track"
         ## Question 1
         q1_answer = input("1) Does the applicant present themselves well? YES or NO? -- ")
@@ -101,19 +101,19 @@ def main():
         print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
 
         if prelim_bool == True:
-            print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the preliminary questions.")
+            print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the fast-track/preliminary questions.")
             eligbility_status_str = "ELIGIBLE"
             print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
             print() # prints a blank line for spacing.
         else:
-            print(applicant_name + " has been determined to be INELIGIBLE for the loan based off the preliminary questions.")
+            print(applicant_name + " has been determined to be INELIGIBLE for the loan based off the fast-track/preliminary questions.")
             eligbility_status_str = "INELIGIBLE"
             print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
             print() # prints a blank line for spacing.
             print("Move on to the broader set of questions.")
 
 
-    # End prelimary questions
+    # End fast-track/preliminary questions
     else:
         print("*** 7 In-Depth Questions ***")
         question_set_status = "In-Depth"
@@ -188,12 +188,12 @@ def main():
         print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
 
         if indepth_bool == True:
-            print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the preliminary questions.")
+            print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the fast-track/preliminary questions.")
             eligbility_status_str = "ELIGIBLE"
             print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
             print() # prints a blank line for spacing.
         else:
-            print(applicant_name + " has been determined to be INELIGIBLE for the loan based off the preliminary questions.")
+            print(applicant_name + " has been determined to be INELIGIBLE for the loan based off the fast-track/preliminary questions.")
             eligbility_status_str = "INELIGIBLE"
             print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
             print() # prints a blank line for spacing.
