@@ -33,14 +33,14 @@ def restart_program_menu():
 # End restart_program function
 
 
-def save_file(applicant_name, eligbility_status_str):
+def save_file(applicant_name, eligbility_status_str, question_set_status):
     """Function that allows the user to choose if they want to change their
     current applicant's name & loan eligibility information to a text file."""
     save_file_question = input("Do you want to save the applicants's loan eligibility status to a text file? YES or NO -- ")
     if save_file_question == "YES" or save_file_question == "yes" or save_file_question == "Yes":
         chosen_file_name = input("Please enter a new or already created '.txt' file name to save user information to -- ")
         save_file = open(chosen_file_name,'a+')
-        save_file.write(applicant_name + " was determined to be: " +  eligbility_status_str + "\n")
+        save_file.write(applicant_name + " was determined to be: " +  eligbility_status_str + " -- based on " + question_set_status + "\n")
         save_file.close()
     else:
         print("Data will not be saved.")
@@ -65,6 +65,7 @@ def main():
 
     if which_qs == "YES" or which_qs == "yes" or which_qs == "Yes": # if statement that checks to see if user wants to do the 3 preliminary questions
         print("** 3 Preliminary Questions **")
+        question_set_status = "Fast-Track"
         ## Question 1
         q1_answer = input("1) Does the applicant present themselves well? YES or NO? -- ")
         q1_list = [] # creates list where question 1 answer boolean will be stored.
@@ -115,6 +116,7 @@ def main():
     # End prelimary questions
     else:
         print("*** 7 In-Depth Questions ***")
+        question_set_status = "In-Depth"
         indpth_q1_answer = input("1) Is the applicant in good standing with the bank? YES or NO? -- ")
         indpth_q1_list = []
         if indpth_q1_answer == "YES" or indpth_q1_answer == "yes" or indpth_q1_answer == "Yes":
@@ -196,7 +198,7 @@ def main():
             print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
             print() # prints a blank line for spacing.
 
-    save_file(applicant_name, eligbility_status_str)
+    save_file(applicant_name, eligbility_status_str, question_set_status)
     restart_program_menu()
 # End main
 
