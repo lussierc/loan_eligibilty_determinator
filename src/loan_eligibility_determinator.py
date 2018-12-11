@@ -187,12 +187,12 @@ def main():
         print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
 
         if indepth_bool == True:
-            print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the fast-track/preliminary questions.") # outputs determination information for eligible applicants
+            print(applicant_name + " has been determined to be ELIGIBLE for the loan based off the in-depth questions.") # outputs determination information for eligible applicants
             eligbility_status_str = "ELIGIBLE" # sets applicant eligbility status
             print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
             print() # prints a blank line for spacing.
         else:
-            print(applicant_name + " has been determined to be INELIGIBLE for the loan based off the fast-track/preliminary questions.") # outputs determination information for ineligible applicants
+            print(applicant_name + " has been determined to be INELIGIBLE for the loan based off the in-depth questions.") # outputs determination information for ineligible applicants
             eligbility_status_str = "INELIGIBLE" # sets applicant eligbility status
             print("--------------------------------------------------------------------------------") # prints out line for box that will contain user eligbility.
             print() # prints a blank line for spacing.
