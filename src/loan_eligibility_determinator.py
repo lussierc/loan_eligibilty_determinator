@@ -3,11 +3,12 @@
 """This program will check a applicant's eligbility for a loan."""
 
 __authors__      = "Christian Lussier, Trent Faulkner, Robert Samuel, Mike Spurr"
-__date__        = "28 Nov 2018"
+__date__        = "10 Dec 2018"
 
 
 def start_up_message():
     """Contains the programs start-up message."""
+    print("CS102 - Final Project - Christian Lussier, Mike Spurr, Trent Faulker, Robert Samuel")
     print() # spacing line for better readability.
     print("Welcome to the Loan Eligibility Checker!")
     print("--------------------------------------------------------------------------------")
