@@ -1,8 +1,0 @@
-Johny was determined to be: ELIGIBLE
-Trent was determined to be: INELIGIBLE
-Robert was determined to be: INELIGIBLE
-Billy was determined to be: INELIGIBLE
-christian was determined to be: ELIGIBLE
-Johnny was determined to be: INELIGIBLE
-bigman was determined to be: INELIGIBLE
-JOE was determined to be: INELIGIBLE
