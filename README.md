@@ -32,8 +32,9 @@ Thanks to the following people who contributed to this project.
 ## File Organization
 Information about the file structure and files in the project repository.
 ### `src` folder
-Contains the projects Python source code and output.
+- Contains the projects Python source code and output.
 ### `docs` folder
+- Contains the writing folder and presentation slides.
 #### `writing` Folder
 - `proposal.md`: The writing for the project proposal.
 - `report.md`: The writing for the project's final report.
